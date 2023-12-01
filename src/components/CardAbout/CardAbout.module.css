@@ -1,0 +1,203 @@
+@import "/node_modules/augmented-ui/augmented-ui.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Orbitron&display=swap");
+
+:root {
+	--color-purple: #711c91;
+	--color-pink: #ea00d9;
+	--color-blue-light: rgb(10, 189, 198);
+	--color-blue-light-raw: 10, 189, 198;
+	--color-blue-mid: #133e7c;
+	--color-blue-dark: #091833;
+	--color-yellow: #f9c434;
+	--color-react: rgb(97, 218, 251);
+	--color-react-raw: 97, 218, 251;
+	--color-nodejs: rgb(121, 205, 41);
+	--color-nodejs-raw: 121, 205, 41;
+	--color-express: #fff;
+	--color-express-raw: 255, 255, 255;
+	--color-firebase: rgb(245, 130, 32);
+	--color-firebase-raw: 245, 130, 32;
+}
+
+.App {
+	align-items: center;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 5vh;
+	width: 100vw;
+    margin-bottom: 2rem;
+	
+	gap: 200px;
+}
+
+.card-body2 {
+    --aug-tl: 1px;
+    --aug-br-extend2: 33%;
+    --aug-bl: 20px;
+    --aug-bl-extend1: 33%;
+    --aug-border-bg: linear-gradient(150deg, var(--color-pink), var(--color-blue-light));
+    --aug-inlay-bg: transparent;
+    
+    background-size:cover; /* Ajusta la imagen al tamaño del div */
+    background-position: -50px 0; /* Mueve el fondo 10 píxeles hacia la izquierda */
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 300px;
+    z-index: 1;
+  }
+  
+.card-body3 {
+    --aug-tl: 50px;
+	--aug-tr: 30px;
+	--aug-br: 20px;
+	--aug-br-extend2: 33%;
+	--aug-bl: 20px;
+	--aug-bl-extend1: 33%;
+    --aug-bl-extend1: 33%;
+    --aug-border-bg: linear-gradient(150deg, var(--color-pink), var(--color-blue-light));
+    --aug-inlay-all: 2px;
+	--aug-inlay-bg: linear-gradient(300deg, var(--color-blue-light) -9.08%, var(--color-blue-mid) 83.6%);
+    
+    height: 500px;
+    width:1400px;
+    padding: 200px;
+    z-index: 1;
+  
+    /* Agrega estas propiedades para mover a la izquierda */
+   
+  }
+  .p-body3 {
+    font-size: 80px;
+
+  
+    /* Alinea el texto al centro vertical y horizontalmente */
+    text-align: center;
+  }
+  
+.video{
+    position: absolute;
+    top: 22rem;
+}
+
+.btn-proyect {
+	--aug-tl: 20px;
+	--aug-border-bg: var(--color-pink);
+	--aug-inlay-all: 2px;
+	--aug-inlay-bg: linear-gradient(300deg, var(--color-blue-light) -9.08%, var(--color-blue-mid) 83.6%);
+	grid-area:card-action-demo;
+	z-index: 2;
+	transform: translateZ(20px);
+}
+.btn-demo {
+	--aug-tl: 20px;
+	--aug-border-bg: var(--color-pink);
+	--aug-inlay-all: 2px;
+	--aug-inlay-bg: linear-gradient(300deg, var(--color-blue-light) -9.08%, var(--color-blue-mid) 83.6%);
+	grid-area:card-action-demo;
+	z-index: 2;
+	transform: translateZ(20px);
+}
+.btn-card-action {
+    position: absolute;
+    top: 27rem;
+    left: 38rem;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: "Orbitron", sans-serif;
+	padding: 1rem;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in;
+}
+.btn-card-action1 {
+    position: absolute;
+    top: 27rem;
+    left: 1rem;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-family: "Orbitron", sans-serif;
+	padding: 1rem;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in;
+}
+
+.btn-card-action i {
+	font-size: 1rem;
+	margin-right: 5px;
+}
+
+.btn-card-action:hover {
+	filter: brightness(115%);
+}
+
+.btn-card-action:active {
+	filter: brightness(85%);
+}
+
+.card-title2 {
+    position: absolute;
+	font-family: Orbitron, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 1.25em;
+	color: #ffffff;
+	text-shadow: 2px 2px var(--color-pink);
+	grid-area: title;
+	z-index: 2;
+	transform: translateZ(80px);
+    top: -3rem;
+    left: 20rem;
+}
+.card-subtitle2 {
+    position: absolute;
+	font-family: Jura, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 1.25em;
+	color: #ffffff;
+	text-shadow: 2px 2px var(--color-pink);
+	grid-area: subtitle;
+	z-index: 2;
+	transform: translateZ(80px);
+    top:1rem;
+    left: 38rem;
+}
+.title2 {
+    position: absolute;
+	font-family: Orbitron, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 1.25em;
+	color: #ffffff;
+	text-shadow: 2px 2px var(--color-pink);
+	grid-area: title;
+	z-index: 2;
+	transform: translateZ(80px);
+    top: 5px;
+    left: 16rem;
+}
+.title3 {
+    position: absolute;
+	font-family: Orbitron, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 1.25em;
+	color: #ffffff;
+	
+	grid-area: title;
+	z-index: 2;
+	transform: translateZ(80px);
+    top: 24%;
+    left: 1rem;
+}

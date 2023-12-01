@@ -1,0 +1,134 @@
+@import "/node_modules/augmented-ui/augmented-ui.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Jura&family=Orbitron&display=swap");
+
+:root {
+	--color-purple: #711c91;
+	--color-pink: #ea00d9;
+	--color-blue-light: rgb(10, 189, 198);
+	--color-blue-light-raw: 10, 189, 198;
+	--color-blue-mid: #133e7c;
+	--color-blue-dark: #091833;
+	--color-yellow: #f9c434;
+	--color-react: rgb(97, 218, 251);
+	--color-react-raw: 97, 218, 251;
+	--color-nodejs: rgb(121, 205, 41);
+	--color-nodejs-raw: 121, 205, 41;
+	--color-express: #fff;
+	--color-express-raw: 255, 255, 255;
+	--color-firebase: rgb(245, 130, 32);
+	--color-firebase-raw: 245, 130, 32;
+}
+
+
+.sidebar {
+  width: 250px; /* Ancho del sidebar */
+  height: 50%;
+  position:fixed;
+  top: 25%;
+  left: 0;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding: 50px;
+  position: fixed;
+}
+
+.logo {
+  width: 80%; /* Ancho del logo */
+  margin-bottom: 20px;
+}
+
+.linkItem {
+  margin-bottom: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.linkItem a {
+  text-decoration: none;
+  color: #fff; /* Color del texto del enlace */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px; /* Añadido para un mejor espaciado */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+@keyframes snakeMovement {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(10px) translateY(-10px);
+  }
+  50% {
+    transform: translateX(0) translateY(-20px);
+  }
+  75% {
+    transform: translateX(-10px) translateY(-10px);
+  }
+}
+
+@keyframes rainAnimation {
+  0% {
+    transform: translateY(-600%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.iconIg,
+.iconWsp,
+.iconLdin,
+.iconGit {
+  padding: 10px;
+  font-size: 80px;
+  --aug-all-width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.85;
+  transition: all 0.1s ease-in;
+  transform: translateZ(35px);
+  animation: snakeMovement 2s infinite; /* Ajusta la duración según tus preferencias */
+}
+
+.iconIg:hover,
+.iconWsp:hover,
+.iconLdin:hover,
+.iconGit:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.5) translateZ(35px);
+}
+
+.iconLdin {
+  color: var(--color-react);
+  animation-delay: 0.1s;
+}
+
+.iconWsp {
+  color: var(--color-nodejs);
+  animation-delay: 0.2s;
+}
+
+.iconIg {
+  color: var(--color-pink);
+  animation-delay: 0.3s;
+}
+
+.iconGit {
+  color: var(--color-firebase);
+  animation-delay: 0.4s;
+}
+
+
+/* Estilo para el enlace activo (opcional) */
+.linkItem.active a {
+  background-color: #555; /* Color de fondo para el enlace activo */
+  border-left: 5px solid #ff5733; /* Color del borde izquierdo para el enlace activo */
+}

@@ -1,0 +1,18 @@
+/* CSS personalizado o clases Tailwind para animar la tarjeta */
+@keyframes growFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Aplica la animación a la tarjeta */
+  .bg-white {
+    animation: growFromBottom 1s ease;
+  }
+  
+
+
+
